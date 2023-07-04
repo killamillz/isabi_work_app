@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.updatescrudemail = exports.updatescrud = exports.deletecrudpost = exports.postupdatecrud = exports.getcrudsByEmail = exports.getcrudsById = exports.getcruds = void 0;
+exports.getcruds = "SELECT * FROM cruds";
+exports.getcrudsById = "SELECT * FROM cruds WHERE id = $1";
+exports.getcrudsByEmail = "SELECT * FROM cruds WHERE email = $1";
+exports.postupdatecrud = "INSERT INTO cruds (name, email) VALUES ($1, $2)";
+exports.deletecrudpost = "DELETE FROM cruds WHERE id = $1";
+exports.updatescrud = "UPDATE cruds SET name = $1 WHERE id = $2";
+exports.updatescrudemail = "UPDATE cruds SET email = $1 WHERE id = $2";
