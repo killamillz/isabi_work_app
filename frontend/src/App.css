@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=league+Spartan:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+     --primary: #00a97f;
+     --light: egba(133, 198,218,255);
+     --dark:rgba(13,13,10,255);
+     --darker:rgba(234,157,90,255);
+     --lighter: #cbd6cf;
+     --lighter1: #c3dacc86;
+     --lighter3: #e4f0e9da;
+     --darken: #cca27e;
+     --color: orangered;
+     --search: #FF6000;
+     --primary1: #2b3d4c;
+     --primary2: #354d61;
+}
+
+.logo {
+  max-width: 100%;;
+  height: 40px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 3em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 3em #61dafbaa);
+}
+
+button{
+     padding: 12px 10px;
+     font-size: 14px;
+     background-color: var(--primary1);
+     color: white;
+     
+}
+
+a{
+     text-decoration: none;
+     font-size: 15px;
+     margin: auto;
+}
+
+p{
+     font-size: 15px;
+     margin: 0px;
+}
+
+
+/* editing the header */
+
+.input-group button{
+     background: transparent;
+     font-size: 14px;
+     color: var(--search);
+}
+
+.header-upper{
+     background: var(--lighter3);
+}
+
+/* .input-group input:focus{
+     outline: none;
+
+} */
+
+.navs-links a{
+     font-size: 16px;
+     text-transform: uppercase;
+     color: var(--primary1);
+}
+
+.nav-links-nav a{
+     color: var(--search);
+}
