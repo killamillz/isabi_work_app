@@ -1,20 +1,20 @@
-import express from 'express'
-import {createcrud, createcrudById, postcrud, deletecrud, updatedcrud} from '../controllers/crudcontrollers'
+// import express from 'express'
+// import {createcrud, createcrudById, postcrud, deletecrud, updatedcrud} from '../controllers/crudcontrollers'
 
 
 
-const router = express.Router()
-router.get('/', createcrud)
-router.get('/:id', createcrudById)
+// const router = express.Router()
+// router.get('/', createcrud)
+// router.get('/:id', createcrudById)
 
-router.post('/', postcrud)
+// router.post('/', postcrud)
 
-router.delete('/:id', deletecrud)
+// router.delete('/:id', deletecrud)
 
-router.put('/:id', updatedcrud)
+// router.put('/:id', updatedcrud)
 
 
-export default router
+// export default router
 
 
 
