@@ -59,3 +59,14 @@ const getallartisansBySkill = (req, res) => __awaiter(void 0, void 0, void 0, fu
     }
 });
 exports.getallartisansBySkill = getallartisansBySkill;
+// export const getallartisansBySkill = async (req:Request, res:Response) => {
+//     try{
+//         const skill = req.body.skill
+//         const getStudentQueryBySkill = profile.query(queries.getprofileBySkill, [skill])
+//         const getUserBySkill = await getStudentQueryBySkill
+//         res.status(200).json(getUserBySkill.rows)
+//     }catch(error){
+//         console.error(error)
+//         res.status(500).send("An ERROR has occurred")
+//     } 
+// }
