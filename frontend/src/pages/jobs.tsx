@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Jobs = () => {
+const jobs = () => {
   return (
     <div>Jobs</div>
   )
 }
 
-export default Jobs
+export default jobs
