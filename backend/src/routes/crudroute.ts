@@ -8,7 +8,6 @@ router.get('/', createcrud)
 router.get('/:id', createcrudById)
 
 router.post('/', postcrud)
-
 router.delete('/:id', deletecrud)
 
 router.put('/:id', updatedcrud)
