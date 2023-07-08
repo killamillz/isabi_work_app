@@ -33,6 +33,16 @@ button{
      color: white;
      
 }
+.active{
+     font-weight: 600;
+     color: var(--primary);
+     
+}
+
+.inactive{
+     color: var(--primary1);
+     font-weight: 400;
+}
 
 a{
      text-decoration: none;
@@ -66,9 +76,43 @@ p{
 .navs-links a{
      font-size: 16px;
      text-transform: uppercase;
-     color: var(--primary1);
+     text-decoration: none;
 }
 
-.nav-links-nav a{
+
+
+.social-icons a{
      color: var(--search);
+
 }
+
+/* editting header ends */
+
+
+/* footer starts */
+footer{
+     background-color: var(--lighter3);
+}
+
+
+/* footer ends */
+
+.banner-details{
+     background-image: url(./assets/images/pexels-kelly-17290985.jpg);
+     background-repeat: none;
+     height: 500px;
+
+}
+
+.picture{
+     color: #153879;
+}
+
+form {
+     margin: auto;
+}
+
+input{
+     border-radius: 10px;
+}
+

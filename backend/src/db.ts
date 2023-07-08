@@ -1,14 +1,20 @@
 const Pool = require ("pg").Pool
 
-const pool = new Pool({
+export const pool = new Pool({
     user: "postgres",
     host: "localhost",
-    database: "cruds",
+    database: "userdata",
     password: 'Jesusisthekey7&',
     port: 5432,
 })
 
-export default pool
+export const profile = new Pool({
+    user: "postgres",
+    host: "localhost",
+    database: "usersdatabase",
+    password: 'Jesusisthekey7&',
+    port: 5432,
+})
 
 
 
