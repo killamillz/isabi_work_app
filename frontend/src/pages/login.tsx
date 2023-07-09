@@ -29,23 +29,24 @@
 
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Validation from './loginValidation';
-
-
+// import Validation from './loginValidation';
 
 function login() {
       const [values, setValues] = useState({
             email: '',
             password: ''
       })
-      const [errors, setErrors] = useState({})
-      const handleInput = (event:any) => {
+      const [errors, setErrors] = useState({
+            email: '',
+            password:''
+      })
+      const handleInput = (event: any) => {
             setValues(prev => ({...prev, [event.target.name]: [event.target.values]}))
       }
 
-      const handleSubmit = (event:any) => {
+      const handleSubmit = (event: any) => {
             event.preventDefault();
-            setErrors(Validation(values));
+            // setErrors(Validation(values));
       }
   return (
     <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
@@ -55,13 +56,13 @@ function login() {
                   <div className='mb-3'>
                         <label htmlFor="email"><strong>Email</strong> </label>
                         <input type="email" placeholder='Enter Email' name='email'
-                        onChange = {handleInput} className='form-control rounded-0'/>
-                        {errors.email&& <span className='text-danger'> {errors.email}</span>}
+                        onChange = {handleInput} className='form-control rounded-0' required/>
+                        {errors.email && <span className='text-danger'> {errors.email}</span>}
                   </div>
                   <div className='mb-3'>
                         <label htmlFor="password"><strong>Password</strong></label>
                         <input type="password" placeholder='Enter Password' name='password'
-                        onChange = {handleInput} className='form-control rounded-0'/>
+                        onChange = {handleInput} className='form-control rounded-0' required/>
                         {errors.password && <span className='text-danger'> {errors.password}</span>}
                   </div>
                   <button type='submit' className='btn btn-success w-100 rounded-0'>Log in</button>

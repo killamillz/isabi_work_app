@@ -1,5 +1,5 @@
 import React from 'react'
-import images from "../assets/images/cartoon-camera-clicking-vector.jpeg"
+// import images from "../assets/images/cartoon-camera-clicking-vector.jpeg"
 import { useState } from 'react'
 // interface 
 
@@ -36,7 +36,7 @@ const profile = () => {
      <div className="profile">
           <div className='floor d-flex flex-row justify-content-around'>
                <div className="heads d-flex flex-column align-items-center">
-                    <img src={images} alt="" className=' mt-4' />
+                    {/* <img src={images} alt="" className=' mt-4' /> */}
                     <h5 className='mt-3'> click to edit profile pic</h5>
                </div>
                <div></div>
