@@ -39,11 +39,11 @@ function login() {
             password: ''
       })
       const [errors, setErrors] = useState({})
-      const handleInput = (event) => {
+      const handleInput = (event:any) => {
             setValues(prev => ({...prev, [event.target.name]: [event.target.values]}))
       }
 
-      const handleSubmit = (event) => {
+      const handleSubmit = (event:any) => {
             event.preventDefault();
             setErrors(Validation(values));
       }
@@ -56,7 +56,7 @@ function login() {
                         <label htmlFor="email"><strong>Email</strong> </label>
                         <input type="email" placeholder='Enter Email' name='email'
                         onChange = {handleInput} className='form-control rounded-0'/>
-                        {errors.email && <span className='text-danger'> {errors.email}</span>}
+                        {errors.email&& <span className='text-danger'> {errors.email}</span>}
                   </div>
                   <div className='mb-3'>
                         <label htmlFor="password"><strong>Password</strong></label>
