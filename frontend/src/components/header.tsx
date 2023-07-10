@@ -1,14 +1,15 @@
-import React from 'react'
+import  React  from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiPhoneCall } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { BiLogIn } from 'react-icons/bi'
 import {VscAccount} from 'react-icons/vsc'
+import {useLocation} from 'react-router-dom'
 
 
 const header = () => {
 
-     // const location = useLocation();
+     const location = useLocation();
 
      return <> 
 

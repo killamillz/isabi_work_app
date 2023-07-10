@@ -75,7 +75,7 @@ const Home = () => {
                          <div className="card-body">
                               <h5 className="card-title mb-1">Search for cleaners in your locality</h5>
                               <p className="card-text mb-2">We have over 3000+ cleaners</p>
-                              <a href="#" className="btn btn-primary">Search</a>
+                              <a href="" className="btn btn-primary">Search</a>
                          </div>
                     </div>
                     <div className="cards ">
