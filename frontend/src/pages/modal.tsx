@@ -4,7 +4,7 @@ import { useState } from 'react'
 // interface 
 
 
-const modal = ({ closeModal }) => {
+const modal = ({ closeModal, handleModal}) => {
      const [username, setUsername] = useState('');
      const [email,setEmail] = useState('');
      const [firstname, setFirstname] = useState('');
@@ -21,7 +21,9 @@ const modal = ({ closeModal }) => {
      const handleSubmit = (e:any) => {
           e.preventDefault();     
           const data = { username, email, firstname, lastname, gender, skill, city, state, country, description }
-          
+          handleModal(data)
+          localStorage.setItem("profile",JSON.stringify(data))
+        
           fetch("http://localhost:4000/profile/page", {
                method: 'POST',
                headers: { "Content-Type": "application/json"},
@@ -35,7 +37,7 @@ const modal = ({ closeModal }) => {
 
 
   return<>
-
+  
           <div className='de p-5 d-flex justify-content-center'>
                
                <div className="cardss p-5 ">
